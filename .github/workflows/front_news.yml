@@ -1,0 +1,26 @@
+name: Bot Frontend Pulse
+
+on:
+  schedule:
+    - cron: '30 9 * * *'   # 06:30 BRT
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Teste: mostra os posts no log, sem enviar ao Discord'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # para salvar state/front.json
+
+concurrency:
+  group: world-news   # as três rotinas nunca rodam ao mesmo tempo
+  cancel-in-progress: false
+
+jobs:
+  run:
+    uses: ./.github/workflows/_run_channel.yml
+    with:
+      channel: front
+      dry_run: ${{ inputs.dry_run == true }}
+    secrets: inherit

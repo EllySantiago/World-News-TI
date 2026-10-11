@@ -1,0 +1,26 @@
+name: Bot IA & OSINT
+
+on:
+  schedule:
+    - cron: '15 9 * * *'   # 06:15 BRT
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Teste: mostra os posts no log, sem enviar ao Discord'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # para salvar state/ia_osint.json
+
+concurrency:
+  group: world-news   # as três rotinas nunca rodam ao mesmo tempo
+  cancel-in-progress: false
+
+jobs:
+  run:
+    uses: ./.github/workflows/_run_channel.yml
+    with:
+      channel: ia_osint
+      dry_run: ${{ inputs.dry_run == true }}
+    secrets: inherit

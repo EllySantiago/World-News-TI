@@ -1,0 +1,5 @@
+feedparser~=6.0
+requests~=2.32
+beautifulsoup4~=4.12
+deep-translator~=1.11
+trafilatura~=2.0

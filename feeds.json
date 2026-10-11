@@ -1,0 +1,130 @@
+{
+  "channels": {
+    "cyber": {
+      "webhook_env": "DISCORD_WEBHOOK_URL",
+      "emoji": "🛡️",
+      "color": 3447003,
+      "feeds": [
+        {
+          "name": "The Hacker News",
+          "url": "https://feeds.feedburner.com/TheHackersNews",
+          "lang": "en"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/feed/",
+          "lang": "en"
+        },
+        {
+          "name": "The Record",
+          "url": "https://therecord.media/feed",
+          "lang": "en"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/feed/",
+          "lang": "en"
+        },
+        {
+          "name": "CISO Advisor",
+          "url": "https://www.cisoadvisor.com.br/feed/",
+          "lang": "pt"
+        }
+      ],
+      "watch": [
+        "ShinyHunters"
+      ]
+    },
+    "ia_osint": {
+      "webhook_env": "DISCORD_WEBHOOK_IA_OSINT",
+      "emoji": "🤖",
+      "color": 10181046,
+      "feeds": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml",
+          "lang": "en",
+          "tag": "IA",
+          "emoji": "🤖"
+        },
+        {
+          "name": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/feed.xml",
+          "lang": "en",
+          "tag": "IA",
+          "emoji": "🤖"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+          "lang": "en",
+          "tag": "IA",
+          "emoji": "🤖"
+        },
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.research.google/feeds/posts/default",
+          "lang": "en",
+          "tag": "IA",
+          "emoji": "🤖"
+        },
+        {
+          "name": "Nmap Releases",
+          "url": "https://seclists.org/rss/nmap-hackers.rss",
+          "lang": "en",
+          "emoji": "🛠️",
+          "color": 15844367,
+          "tag": "OSINT & Tools"
+        },
+        {
+          "name": "KitPloit (Hacking & OSINT)",
+          "url": "https://feeds.feedburner.com/pentesttools",
+          "lang": "en",
+          "emoji": "🛠️",
+          "color": 15844367,
+          "tag": "OSINT & Tools"
+        },
+        {
+          "name": "Darknet (Security Tools)",
+          "url": "https://www.darknet.org.uk/feed/",
+          "lang": "en",
+          "emoji": "🛠️",
+          "color": 15844367,
+          "tag": "OSINT & Tools"
+        }
+      ]
+    },
+    "front": {
+      "webhook_env": "DISCORD_WEBHOOK_FRONT",
+      "emoji": "⚡",
+      "color": 1752220,
+      "feeds": [
+        {
+          "name": "Smashing Magazine",
+          "url": "https://www.smashingmagazine.com/feed/",
+          "lang": "en"
+        },
+        {
+          "name": "CSS-Tricks",
+          "url": "https://css-tricks.com/feed/",
+          "lang": "en"
+        },
+        {
+          "name": "Dev.to (Frontend)",
+          "url": "https://dev.to/feed/tag/frontend",
+          "lang": "en"
+        },
+        {
+          "name": "React Blog",
+          "url": "https://react.dev/rss.xml",
+          "lang": "en"
+        },
+        {
+          "name": "LogRocket Blog",
+          "url": "https://blog.logrocket.com/feed/",
+          "lang": "en"
+        }
+      ]
+    }
+  }
+}
